@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Shipping Policy Page</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/terms.css" />
+    <!--- Box Icons --->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- Fontawesome Icons -->
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml" />
+    <script
+      src="https://kit.fontawesome.com/1fbf4ecc2f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="index.html">
+        <img
+          src="img/logo.png"
+          width="180"
+          height="35"
+          alt="Best Self Drive Car rental"
+        />
+      </a>
+
+      <div class="header-actions">
+        <div class="header-contact">
+          <a href="tel:9707628882" class="contact-link">+91 9707 6288 82</a>
+          <br />
+          <span class="contact-time">Mon - Sun: 10:00 am - 10:00 pm</span>
+        </div>
+
+        <a href="explore.html" class="btn" aria-labelledby="aria-label-txt">
+          <i class="fa-solid fa-car" style="color: #ffffff"></i>
+          <span id="aria-label-txt">Book Now</span>
+        </a>
+
+        <a href="tel:+919707628882" class="btn user-btn" aria-label="Profile">
+          <i class="fa-solid fa-phone"></i>
+        </a>
+      </div>
+    </header>
+
+    <!-- Shipping Policy -->
+
+    <section class="TC">
+        <h1 class="h1">Shipping and Delivery Policy</h1>
+        
+        Last updated: 13 May 2023 <br>
+        Delivery and Collection is a service where we delivers the vehicle to a place chosen by the renter. Later, we also collects the vehicle from a place chosen by the renter.
+        
+        
+        
+        
+        <h3>Rental Period:</h3>
+        
+        Rental period is calculated on 24 hours basis (Time to time). For example, if the booking starts from 10 AM today and ends in 10 AM on the next day then it shall be considered as 1 day rental period.
+        
+        <h3>Airport Delivery and Pickup</h3>
+        
+        An amount of INR 500 shall be charged for airport delivery or pick up (One way).
+        
+        <h3>Doorstep Delivery</h3>
+        
+        A reasonable amount shall be charged based on the distance from our office.
+        
+        <h3>
+        Contact Us
+        </h3>
+        Updates and grievance redressal
+        
+        If You find any discrepancies or have any grievances in relation to the collection, storage, use, disclosure and transfer of Your Personal Information under this Policy or any terms of ONROADZ GUWAHATI'S Agreement, Privacy Policy, Fees Policy etc. please contact the following:
+        
+        Mr. Pankaj, the designated grievance officer under Information Technology Act, 2000  
+        E-mail: grievance@onroadzguwahati.com
+        
+        If you have any questions about this Policy, You can contact us: <br>
+        • Email : admin@onroadzguwahati.com Mobile No : 9707628882
+         </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="row">
+        <div class="col">
+          <img src="img/logo.png" class="logo" />
+          <p>
+            Most Trusted Self Drive <br> Car Rental Service in Guwahati.
+          </p>
+        </div>
+        <div class="col">
+          <h3>Address <div class="underline">
+            <span></span> 
+          </div></h3>
+          <p>Onroadz Guwahati, Sasa Alka Enclave</p>
+          <p>Sarbodaya Nagar</p>
+          <p>Near Guwahati Commerce College</p>
+          <p>Chandmari</p>
+          <p>Guwahati, Assam 781021</p>
+          <p class="email-id">contact@onroadzguwahati.com</p>
+        </div>
+        <div class="col">
+          <h3>Links<div class="underline">
+            <span></span> 
+          </div></h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="testimonial.html">Testimonials</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="privacypolicy.html">Privacy Policy</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Message<div class="underline">
+            <span></span> 
+          </div></h3>
+          <form id="footer-form">
+            <i class="bx bxs-envelope"></i>
+            <input type="text" id="input-msg4" placeholder="Write Your Message" required />
+            <button type="submit" onclick="sendMessage4(event)"><i class="bx bxs-send"></i></button>
+          </form>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/onroadzghy"><i class="bx bxl-facebook"></i></a>
+            <a href="https://www.instagram.com/onroadzguwahati/"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-pinterest"></i></a>
+          </div>
+      </div>
+      <hr>
+      <p class="copyright">Copyright © 2023 Onroadz Guwahati. All Rights Reserved</p>
+    </footer>
+    <!--Footer msg-->
+    <script>
+      function sendMessage4(event) {
+        event.preventDefault();
+      
+        var msg = document.getElementById("input-msg4").value;
+      
+        var url = "https://wa.me/919707628882?text=" + msg;
+        window.open(url, "_blank").focus();
+      }
+    </script>
+    
+    <!-- ScrollReveal Github-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

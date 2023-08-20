@@ -1,0 +1,50 @@
+.TC {
+  text-align: left;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  padding: 40px;
+  font-size: var(--fs-6);
+}
+
+.TC h1 {
+  text-align: center;
+  font-family: var(--ff-nunito);
+  font-size: 24px;
+}
+
+.TC h2 {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+@media (max-width: 500px) {
+  .TC h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+th {
+  font-weight: bold;
+}
+
+ol {
+  list-style: disc;
+}

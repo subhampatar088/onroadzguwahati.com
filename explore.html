@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Explore page</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/explore.css" />
+    <!--- Box Icons --->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- Fontawesome Icons -->
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml" />
+    <script
+      src="https://kit.fontawesome.com/1fbf4ecc2f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="index.html">
+        <img
+          src="img/logo.png"
+          width="180"
+          height="35"
+          alt="Best Self Drive Car rental"
+        />
+      </a>
+
+      <div class="header-actions">
+        <div class="header-contact">
+          <a href="tel:9707628882" class="contact-link">+91 9707 6288 82</a>
+          <br />
+          <span class="contact-time">Mon - Sun: 10:00 am - 10:00 pm</span>
+        </div>
+
+        <a href="#explore" class="btn" aria-labelledby="aria-label-txt">
+          <i class="fa-solid fa-car" style="color: #ffffff"></i>
+          <span id="aria-label-txt">Book Now</span>
+        </a>
+
+        <a href="tel:+919707628882" class="btn user-btn" aria-label="Profile">
+          <i class="fa-solid fa-phone"></i>
+        </a>
+      </div>
+    </header>
+
+
+    <!-- pop up form -->
+
+    <div class="overlay" id="overlay2"></div>
+    <div class="final-form-container">
+      <span id="close-form2" class="close-button"
+        ><i class="fas fa-times"></i
+      ></span>
+      <div class="final-form-card">
+        <h2>Rent a Car</h2>
+        <form action="">
+          <div class="input-group">
+            <label for="carName">Car Name</label>
+            <input type="text" id="carName2" name="carName" required />
+          </div>
+
+          <div class="input-group">
+            <label for="pickupDate">Pickup Date</label>
+            <input type="date" id="pickupDate2" name="pickupDate" required />
+          </div>
+
+          <div class="input-group">
+            <label for="dropDate">Dropping Date</label>
+            <input type="date" id="dropDate2" name="dropDate" required />
+          </div>
+
+          <div class="input-group">
+            <label for="fullName">Your Full Name</label>
+            <input type="text" id="fullName2" name="fullName" required />
+          </div>
+
+          <button class="btn" type="submit" onclick="submitForm2(event)">Rent Now</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Featured Cars -->
+    <section class="vehicle" id="vehicles">
+        <h1 class="heading">Featured <span>Cars</span></h1>
+  
+        <div class="slider">
+          <div class="wrapper">
+            <div class="fa-solid fa-angle-left preNext" id="preBtn"></div>
+  
+            <div class="wraper-box">
+              <div class="box active">
+                <img src="assets/cars/exploreCars/creta sx 2.jpg" alt="" />
+                <div class="content">
+                  <h3>Creta SX</h3>
+                  <div class="price">₹ 3300 <span>/day</span></div>
+                  
+                  <a href="#" class="btn rent-btn">rent</a>
+                </div>
+              </div>
+          
+              <div class="box" >
+                <img src="assets/cars/exploreCars/baleno zeta w.jpg" alt="" />
+                <div class="content">
+                  <h3>Baleno Zeta White</h3>
+                  <div class="price">₹ 2200 <span>/day</span></div>
+                  
+                  <a href="#" class="btn rent-btn">rent</a>
+                </div>
+              </div>
+  
+              <div class="box" >
+                <img src="assets/cars/exploreCars/creta sx.jpg" alt="" />
+                <div class="content">
+                  <h3>Creta SX(O) Moonroof</h3>
+                  <div class="price">₹ 3300 <span>/day</span></div>
+                  
+                  <a href="#" class="btn rent-btn">rent</a>
+                </div>
+              </div>
+  
+           
+  
+              <div class="box" >
+                <img src="assets/cars/exploreCars/scorpio classic.jpg" alt="" />
+                <div class="content">
+                  <h3>Scorpio Classic White</h3>
+                  <div class="price">₹ 3200 <span>/day</span></div>
+                  
+                  <a href="#" class="btn rent-btn">rent</a>
+                </div>
+              </div>
+              <div class="box">
+                <img src="assets/cars/exploreCars/innova crysta.jpg" alt="" />
+                <div class="content">
+                  <h3>Innova Crysta</h3>
+                  <div class="price">₹ 4000 <span>/day</span></div>
+                  
+                  <a href="#" class="btn rent-btn">rent</a>
+                </div>
+              </div>
+              <div class="box" >
+                <img src="assets/cars/exploreCars/tatasafari.jpg" alt="" />
+                <div class="content">
+                  <h3>Tata Safari AMT XZ+</h3>
+                  <div class="price">₹ 4000 <span>/day</div>
+                  <a href="#" class="btn rent-btn">rent</a>
+                </div>
+              </div>
+            </div>
+            <div class="fa-solid fa-angle-right preNext" id="nextBtn"></div>
+          </div>
+  
+          <div class="activeCircle">
+            <div class="fa-regular fa-solid fa-circle" id="forCar-img1"></div>
+            <div class="fa-regular fa-circle" id="forCar-img2"></div>
+            <div class="fa-regular fa-circle" id="forCar-img3"></div>
+            <div class="fa-regular fa-circle" id="forCar-img4"></div>
+            <div class="fa-regular fa-circle" id="forCar-img5"></div>
+            <div class="fa-regular fa-circle" id="forCar-img6"></div>
+          </div>
+        </div>
+      </section>
+    <!--More Cars-->
+    <section class="explore" id="explore">
+      <div class="heading">
+        <span>Explore All Cars</span>
+        <h1>
+          Our Collection
+        </h1>
+      </div>
+      <div class="explore-container">
+        <div class="box">
+          <div class="box-img">
+            <img src="assets/cars/exploreCars/celerio.jpg" alt="car1" />
+            <p>2023</p>
+            <h3>Celerio</h3>
+            <h2>₹ 1500 <span>/day</span></h2>
+            <a href="#explore" class="btn rent-btn">Rent Now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-img">
+            <img src="assets/cars/exploreCars/Tiago.jpg" alt="car1" />
+            <p>2023</p>
+            <h3>Tiago</h3>
+            <h2>₹ 1600 <span>/day</span></h2>
+            <a href="#explore" class="btn rent-btn">Rent Now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-img">
+            <img src="assets/cars/exploreCars/SwiftVXI.jpg" alt="car1" />
+            <p>2023</p>
+            <h3>Swift Vxi</h3>
+            <h2>₹ 2000 <span>/day</span></h2>
+            <a href="#explore" class="btn rent-btn">Rent Now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-img">
+            <img src="assets/cars/exploreCars/TataPunch.jpg" alt="car1" />
+            <p>2023</p>
+            <h3>Tata Punch Adv.</h3>
+            <h2>₹ 2200 <span>/day</span></h2>
+            <a href="#explore" class="btn rent-btn">Rent Now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-img">
+            <img src="assets/cars/exploreCars/GrandVitara.jpg" alt="car1" />
+            <p>2023</p>
+            <h3>Grand Vitara</h3>
+            <h2>₹ 2800-3000 <span>/day</span></h2>
+            <a href="#explore" class="btn rent-btn">Rent Now</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-img">
+            <img src="assets/cars/exploreCars/tharrwd.jpg" alt="car1" />
+            <p>2023</p>
+            <h3>Thar RWD</h3>
+            <h2>₹ 3500-3700 <span>/day</span></h2>
+            <a href="#explore" class="btn rent-btn">Rent Now</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-img">
+            <img src="assets/cars/exploreCars/thar.jpg" alt="car1" />
+            <p>2023</p>
+            <h3>Thar 4x4</h3>
+            <h2>₹ 3400-4,000 <span>/day</span></h2>
+            <a href="#explore" class="btn rent-btn">Rent Now</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-img">
+            <img src="assets/cars/exploreCars/xuv-700.jpg" alt="car1" />
+            <p>2023</p>
+            <h3>Xuv 700</h3>
+            <h2>₹ 4500 <span>/day</span></h2>
+            <a href="#explore" class="btn rent-btn">Rent Now</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-img">
+            <img src="assets/cars/exploreCars/tatasafari.jpg" alt="car1" />
+            <p>2023</p>
+            <h3>Tata Safari AMT XZ+</h3>
+            <h2>₹ 4000 <span>/day</span></h2>
+            <a href="#explore" class="btn rent-btn">Rent Now</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-img">
+            <img src="assets/cars/exploreCars/venueSBlack.jpg" alt="car1" />
+            <p>2023</p>
+            <h3>Venue S Black</h3>
+            <h2>₹ 2500 <span>/day</span></h2>
+            <a href="#explore" class="btn rent-btn">Rent Now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-img">
+            <img src="assets/cars/exploreCars/scorpion.jpg" alt="car1" />
+            <p>2023</p>
+            <h3>Scorpio N</h3>
+            <h2>₹ 3800 <span>/day</span></h2>
+            <a href="#explore" class="btn rent-btn">Rent Now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-img">
+            <img src="assets/cars/exploreCars/creta sx 2.jpg" alt="car1" />
+            <p>2023</p>
+            <h3>Creta SX(O) Moonroof</h3>
+            <h2>₹ 3300 <span>/day</span></h2>
+            <a href="#explore" class="btn rent-btn">Rent Now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-img">
+            <img src="assets/cars/exploreCars/i20 elite.jpg" alt="car1" />
+            <p>2023</p>
+            <h3>i20 Elite</h3>
+            <h2>₹ 2200 <span>/day</span></h2>
+            <a href="#explore" class="btn rent-btn">Rent Now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-img">
+            <img src="assets/cars/exploreCars/creta sx.jpg" alt="car1" />
+            <p>2023</p>
+            <h3>Creta SX</h3>
+            <h2>₹ 3000 <span>/day</span></h2>
+            <a href="#explore" class="btn rent-btn">Rent Now</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-img">
+            <img src="assets/cars/exploreCars/xuv300.jpg" alt="car1" />
+            <p>2023</p>
+            <h3>Xuv 300(Sunroof)</h3>
+            <h2>₹ 2800 <span>/day</span></h2>
+            <a href="#explore" class="btn rent-btn">Rent Now</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-img">
+            <img src="assets/cars/exploreCars/xuv500.jpg" alt="car1" />
+            <p>2023</p>
+            <h3>Xuv 500 (Sunroof)</h3>
+            <h2>₹ 3300 <span>/day</span></h2>
+            <a href="#explore" class="btn rent-btn">Rent Now</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-img">
+            <img src="assets/cars/exploreCars/baleno zeta w.jpg" alt="car1" />
+            <p>2023</p>
+            <h3>Baleno Zeta White</h3>
+            <h2>₹ 2200 <span>/day</span></h2>
+            <a href="#explore" class="btn rent-btn">Rent Now</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-img">
+            <img src="assets/cars/exploreCars/ertiga.jpg" alt="car1" />
+            <p>2023</p>
+            <h3>Maruti Ertiga White</h3>
+            <h2>₹ 3000 <span>/day</span></h2>
+            <a href="#explore" class="btn rent-btn">Rent Now</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-img">
+            <img src="assets/cars/exploreCars/innova crysta.jpg" alt="car1" />
+            <p>2023</p>
+            <h3>Innova Crysta</h3>
+            <h2>₹ 4000 <span>/day</span></h2>
+            <a href="#explore" class="btn rent-btn">Rent Now</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-img">
+            <img src="assets/cars/exploreCars/scorpio classic.jpg" alt="car1" />
+            <p>2023</p>
+            <h3>Scorpio Classic White</h3>
+            <h2>₹ 3200 <span>/day</span></h2>
+            <a href="#explore" class="btn rent-btn">Rent Now</a>
+          </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="row">
+        <div class="col">
+          <img src="img/logo.png" class="logo" />
+          <p>
+            Most Trusted Self Drive <br> Car Rental Service in Guwahati.
+          </p>
+        </div>
+        <div class="col">
+          <h3>Address <div class="underline">
+            <span></span> 
+          </div></h3>
+          <p>Onroadz Guwahati, Sasa Alka Enclave</p>
+          <p>Sarbodaya Nagar</p>
+          <p>Near Guwahati Commerce College</p>
+          <p>Chandmari</p>
+          <p>Guwahati, Assam 781021</p>
+          <p class="email-id">contact@onroadzguwahati.com</p>
+        </div>
+        <div class="col">
+          <h3>Links<div class="underline">
+            <span></span> 
+          </div></h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="testimonial.html">Testimonials</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="privacypolicy.html">Privacy Policy</a></li>
+            <li><a href="shippingpolicy.html">Shipping Policy</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Message<div class="underline">
+            <span></span> 
+          </div></h3>
+          <form id="footer-form">
+            <i class="bx bxs-envelope"></i>
+            <input type="text" id="input-msg2" placeholder="Write Your Message" required />
+            <button type="submit" onclick="sendMessage2(event)"><i class="bx bxs-send"></i></button>
+          </form>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/onroadzghy"><i class="bx bxl-facebook"></i></a>
+            <a href="https://www.instagram.com/onroadzguwahati/"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-pinterest"></i></a>
+          </div>
+      </div>
+      <hr>
+      <p class="copyright">Copyright © 2023 Onroadz Guwahati. All Rights Reserved</p>
+    </footer>
+    <!-- font awsome link -->
+    <script
+      src="https://kit.fontawesome.com/ca9a6c5a17.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ScrollReveal Github-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/explore.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

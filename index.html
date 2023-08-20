@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Car Rental Website</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <!--- Box Icons --->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- Fontawesome Icons -->
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml" />
+    <script
+      src="https://kit.fontawesome.com/1fbf4ecc2f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="page-container">
+    <!-- Header -->
+    <header>
+      <a href="index.html">
+        <img
+          src="img/logo.png"
+          width="180"
+          height="35"
+          alt="Best Self Drive Car rental"
+        />
+      </a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#guide">Guide</a></li>
+        <li><a href="#explore">Explore</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+      </ul>
+      <div class="header-actions">
+        <div class="header-contact">
+          <a href="tel:9707628882" class="contact-link">+91 9707 6288 82</a>
+          <br />
+          <span class="contact-time">Mon - Sun: 10:00 am - 10:00 pm</span>
+        </div>
+
+        <a href="#explore" class="btn" aria-labelledby="aria-label-txt">
+          <i class="fa-solid fa-car" style="color: #ffffff"></i>
+          <span id="aria-label-txt">Book Now</span>
+        </a>
+
+        <a href="tel:+919707628882" class="btn user-btn" aria-label="Profile">
+          <i class="fa-solid fa-phone"></i>
+        </a>
+      </div>
+    </header>
+    <!-- Home -->
+    <section class="home" id="home">
+      <div class="text">
+        <h1><span>Looking</span> to <br />rent a car</h1>
+        <p><span>Onroadz Guwahati</span> is the Best Place for Car Rentals. <br>Drive Your Dreams, Rent Your Ride.</p>
+        <a href="#explore" class="btn">Start Exploring Now</a>
+      </div>
+    </section>
+
+    <!-- Guide -->
+    <section class="guide" id="guide">
+      <div class="heading">
+        <span>How It Works</span>
+        <h1>Rent With 3 Easy Steps</h1>
+      </div>
+      <div class="guide-container">
+        <div class="box">
+          <i class="bx bxs-map"></i>
+          <h2>Choose A Vehicle</h2>
+          <p>Select a vehicle of your choice from our explore section.</p>
+        </div>
+
+        <div class="box">
+          <i class="bx bxs-calendar-check"></i>
+          <h2>Fill The Form</h2>
+          <p>A form will appear after you select a vehicle. Provide all the details mentioned in the form.</p>
+        </div>
+
+        <div class="box">
+          <i class="bx bxs-calendar-star"></i>
+          <h2>Book a car</h2>
+          <p>Submit the form to notify us about the details of your bookings. </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- pop up form -->
+
+    <div class="overlay" id="overlay"></div>
+    <div class="final-form-container">
+      <span id="close-form" class="close-button"
+        ><i class="fas fa-times"></i
+      ></span>
+      <div class="final-form-card">
+        <h2>Rent a Car</h2>
+        <form action="">
+          <div class="input-group">
+            <label for="carName">Car Name</label>
+            <input type="text" id="carName" name="carName" required />
+          </div>
+
+          <div class="input-group">
+            <label for="pickupDate">Pickup Date</label>
+            <input type="date" id="pickupDate" name="pickupDate" required />
+          </div>
+
+          <div class="input-group">
+            <label for="dropDate">Dropping Date</label>
+            <input type="date" id="dropDate" name="dropDate" required />
+          </div>
+
+          <div class="input-group">
+            <label for="fullName">Your Full Name</label>
+            <input type="text" id="fullName" name="fullName" required />
+          </div>
+
+          <button class="btn" type="submit" onclick="submitForm(event)">Rent Now</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- explore-->
+    
+    <section class="explore" id="explore">
+      <div class="heading">
+        <span>Trending Cars</span>
+        <h1>
+          Explore Our Top Deals
+        </h1>
+      </div>
+      <div class="explore-container">
+        <div class="box">
+          <div class="box-img">
+            <img src="assets/cars/homeCars/punchoffer.jpg" alt="car1" />
+            <p>2023</p>
+            <h3>Tata Punch ADV</h3>
+            <h2>₹ 1899 <span>/day</span></h2>
+            <a href="#explore" class="btn rent-btn">Rent Now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-img">
+            <img src="assets/cars/homeCars/celerio.jpg" alt="car1" />
+            <p>2023</p>
+            <h3>Celerio</h3>
+            <h2>₹ 1399 <span>/day</span></h2>
+            <a href="#explore" class="btn rent-btn">Rent Now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-img">
+            <img src="assets/cars/homeCars/venue.jpg" alt="car1" />
+            <p>2023</p>
+            <h3>Venue</h3>
+            <h2>₹ 2099 <span>/day</span></h2>
+            <a href="#explore" class="btn rent-btn">Rent Now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-img">
+            <img src="assets/cars/homeCars/offerthar.jpg" alt="car1" />
+            <p>2023</p>
+            <h3>Thar 4X4 HT</h3>
+            <h2>₹ 3399 <span>/day</span></h2>
+            <a href="#explore" class="btn rent-btn">Rent Now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-img">
+            <img src="assets/cars/homeCars/safari.jpg" alt="car1" />
+            <p>2023</p>
+            <h3>Safari XZ+ AMT</h3>
+            <h2>₹ 3499 <span>/day</span></h2>
+            <a href="#explore" class="btn rent-btn">Rent Now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-img">
+            <img src="assets/cars/exploreCars/collage.jpg" alt="car1" />
+            <h3>More Cars Available</h3>
+            <br>
+            <a href="explore.html" class="btn">View All Cars-></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="heading">
+        <span>About Us</span>
+        <h1>Best Customer Experience</h1>
+      </div>
+      <div class="about-container">
+        <div class="about-img">
+          <img src="img/about.png" alt="" />
+        </div>
+        <div class="about-text">
+          <span>About us</span>
+          <p>
+            Onroadz Guwahati is one of the top self-drive car rental in Guwahati, Assam. We offer a wide range of vehicles like <span>Hatchbacks, 
+              sedans, SUVs </span>  and luxury cars. We let you enjoy driving without owning, giving you freedom and choices. 
+            Onroadz Guwahati takes pguide in its meticulously maintained and modern fleet, equipped with cutting-edge technology 
+            for a seamless and enjoyable drive.
+          </p>
+          <p></p>
+            Whether your journey is for business or pleasure, we have the perfect car to 
+            match your requirements. Our cars are at your disposal for daily, weekly, or dayly rentals, ensuring you have 
+            flexibility in selecting the ideal plan to suit your preferences.
+          </p>
+          <!-- <a href="#" class="btn">Learn More</a> -->
+        </div>
+      </div>
+    </section>
+    <!-- Reviews -->
+    <section class="reviews" id="reviews">
+      <div class="heading">
+        <span>Reviews</span>
+        <h1>Hear From Our Guests</h1>
+      </div>
+      <div class="reviews-container">
+        <div class="box">
+          <div class="rev-img">
+            <img src="assets/testimonial/1056x594/scorpiocustomer.jpg" alt="" />
+          </div>
+          <h2>Arpan</h2>
+          <div class="stars">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+          </div>
+          <p>
+            I rented Scorpio from Onroadz for 15 days for my North East Trip in
+            April 2023. The car was in very good condition and i drove 3000+ kms
+            without any hassle. It was a memorable trip for me and I wish Mr
+            Nishant and his team good luck and to keep up the good work.
+          </p>
+        </div>
+
+        <div class="box">
+          <div class="rev-img">
+            <img src="assets/testimonial/1056x594/cretacustomer.jpg" alt="" />
+          </div>
+          <h2>Somit Mallo</h2>
+          <div class="stars">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+          </div>
+          <p>
+            The car provided by Onroadz was in perfect condition. Nishant and
+            Pankaj was very humle and responsive. Will definately use their
+            service again.
+          </p>
+        </div>
+
+        <div class="box">
+          <div class="rev-img">
+            <img src="assets/testimonial/1056x594/xuvcustomer.jpg" alt="" />
+          </div>
+          <h2>Didwm Brahma</h2>
+          <div class="stars">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+          </div>
+          <p>
+            Our Trip to Tawang was an overall good experience. The owner was
+            ready to help us at every moment. But one suggestion - try to avoid
+            last-minute bookings.
+          </p>
+        </div>
+      </div>
+      <a href="testimonial.html" class="btn">Read More</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="row">
+        <div class="col">
+          <img src="img/logo.png" class="logo" />
+          <p>
+            Most Trusted Self Drive <br> Car Rental Service in Guwahati.
+          </p>
+        </div>
+        <div class="col">
+          <h3>Address <div class="underline">
+            <span></span> 
+          </div></h3>
+          <p>Onroadz Guwahati, Sasa Alka Enclave</p>
+          <p>Sarbodaya Nagar</p>
+          <p>Near Guwahati Commerce College</p>
+          <p>Chandmari</p>
+          <p>Guwahati, Assam 781021</p>
+          <p class="email-id">contact@onroadzguwahati.com</p>
+        </div>
+        <div class="col">
+          <h3>Links<div class="underline">
+            <span></span> 
+          </div></h3>
+          <ul>
+            <li><a href="#home">Home</a></li>           
+            <li><a href="testimonial.html">Testimonials</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="privacypolicy.html">Privacy Policy</a></li>
+            <li><a href="shippingpolicy.html">Shipping Policy</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Message<div class="underline">
+            <span></span> 
+          </div></h3>
+          <form id="footer-form">
+            <i class="bx bxs-envelope"></i>
+            <input type="text" id="input-msg" placeholder="Write Your Message" required />
+            <button type="submit" onclick="sendMessage(event)"><i class="bx bxs-send"></i></button>
+          </form>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/onroadzghy"><i class="bx bxl-facebook"></i></a>
+            <a href="https://www.instagram.com/onroadzguwahati/"><i class="bx bxl-instagram"></i></a>
+            <a href="#"><i class="bx bxl-twitter"></i></a>
+            <a href="#"><i class="bx bxl-pinterest"></i></a>
+          </div>
+      </div>
+      <hr>
+      <p class="copyright">Copyright © 2023 Onroadz Guwahati. All Rights Reserved</p>
+    </footer>
+    <!-- ScrollReveal Github-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
