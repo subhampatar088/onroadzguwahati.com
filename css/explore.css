@@ -149,3 +149,12 @@ html {
   width: 300px;
   height: 350px;
 }
+
+@media (max-width: 1042px) {
+  #vehicles {
+    display: none;
+  }
+  #explore {
+    margin-top: 50px;
+  }
+}

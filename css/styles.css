@@ -528,6 +528,9 @@ button#press:hover {
   .form-container {
     padding-top: 2rem;
   }
+  .book-now {
+    display: none;
+  }
 }
 @media (max-width: 350px) {
   header {
